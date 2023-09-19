@@ -13,6 +13,8 @@
 main {
     width: 100%;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .bannerContainer {
@@ -92,7 +94,6 @@ main {
 
 
 .newsGrid {
-    height: 414px;
     width: calc(100%-40px);
     max-width: 1140px;
     display: grid;
