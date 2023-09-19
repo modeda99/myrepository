@@ -78,8 +78,8 @@ main {
     color: white;
     max-width: 400px;
     font-weight: 300;
-    font-size: 1.3em;
 }
+
 
 
 .bannerTagline {
@@ -225,7 +225,8 @@ main {
 
 .banner2{
     max-width: 1140px;
-    margin: 100px auto;
+    
+    margin: 100px auto 110px auto;
     height: 254px;
     background-color: rgb(82, 158, 173);
 
@@ -425,6 +426,7 @@ main {
 
     .newsGrid{
         grid-template-columns: 1fr;
+        margin-bottom: 100px;
     }
 
     .griddestGrid{
