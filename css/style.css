@@ -96,6 +96,29 @@ main {
     font-size: 2.5em;
 }
 
+.firstGrid{
+    max-width: 1100px;
+    width: calc(100%-40%);
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 0 auto;
+    padding-bottom: 90px;
+}
+
+.floatingLink{
+    height: auto;
+    width: 100%;
+    border-radius: 3%;
+
+}
+
+@media only screen and (max-width: 950px){
+
+    .firstGrid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 
 .newsGrid {
@@ -109,7 +132,7 @@ main {
 }
 
 .gridItem2{
-    height: 275px;
+    height: 207px;
     width: 100%;
     display: grid;
 
@@ -134,8 +157,13 @@ main {
 }
 
 .gridItem3{
+
     color: rgba(0, 156, 180, 1);
     grid-row: span 1;
+    height: 207px;
+    width: 100%;
+    display: grid;
+
 }
 
 
@@ -209,6 +237,12 @@ main {
 .headlineNews3{
     margin-bottom: 20px;
 }
+
+.pls3{
+    border: 0.5px solid black;
+}
+
+
 
 
 @keyframes slide-in-bck-left{
