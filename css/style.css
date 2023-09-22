@@ -66,7 +66,7 @@ main {
 .banner {
     height: 340px;
     width: 100%;
-    background: url(/resources2/synagoge1.jpg);
+    background: url(/resources2/synagoge1.jpg) center center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -510,6 +510,13 @@ main {
     
     .leftSideTextSlider1 {
         margin-left: 10px;
+    }
+
+
+    /* ! VORSICHT KAPUTTE MEDIA QUERY */
+    .newsGrid{
+        display: grid;
+        grid-template-columns: 1;
     }
     
 }
