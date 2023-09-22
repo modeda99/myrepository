@@ -455,6 +455,16 @@ main {
     }
 }
 
+@media screen and (max-width: 850pxpx) {
+    .griddestGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .malsomalso {
+        grid-column: span 2;
+    }
+}
+
 .banner4{
     margin-top: 100px;
     background-color: rgb(82, 158, 173);
