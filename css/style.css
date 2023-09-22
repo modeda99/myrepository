@@ -263,7 +263,7 @@ main {
     color: rgba(0, 156, 180, 1);
 
     grid-column: 2/3;
-    grid-row: 5/7;
+    grid-row: 5/8;
 
     display: grid;
     grid-template-columns: 1fr 6fr;
