@@ -78,6 +78,24 @@ main {
     margin: auto 20px;
 }
 
+
+.slide-in-bottom {
+	        animation: slide-in-bottom 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+  @keyframes slide-in-bottom {
+    0% {
+              transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
 .leftSideTextSlider1 {
     color: white;
     max-width: 400px;
@@ -312,6 +330,7 @@ main {
     }
 }
 
+
 @keyframes slide-in-bck-left{
     0%{
         transform: translateZ(700px) translateX(-500px);
@@ -326,8 +345,82 @@ main {
 }
 
 .slide-in-bck-left{
-    animation: slide-in-bck-left 3s ease-in;
+    animation: slide-in-bck-left 1s ease-in 0.4s;
+    animation-fill-mode: both;
 }
+
+@keyframes slide-in-bck-left2{
+    0%{
+        transform: translateZ(700px) translateX(-500px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateZ(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-bck-left2{
+    animation: slide-in-bck-left 1s ease-in 0.8s;
+    animation-fill-mode: both;
+}
+
+@keyframes slide-in-bck-left3{
+    0%{
+        transform: translateZ(700px) translateX(-500px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateZ(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-bck-left3{
+    animation: slide-in-bck-left 1s ease-in 1.2s;
+    animation-fill-mode: both;
+}
+
+@keyframes slide-in-bck-left4{
+    0%{
+        transform: translateZ(700px) translateX(-500px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateZ(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-bck-left4{
+    animation: slide-in-bck-left 1s ease-in 1.6s;
+    animation-fill-mode: both;
+}
+
+@keyframes slide-in-bck-left5{
+    0%{
+        transform: translateZ(700px) translateX(-500px);
+        opacity: 0;
+    }
+
+
+    100%{
+        transform: translateZ(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-bck-left5{
+    animation: slide-in-bck-left 1s ease-in 1.8s;
+    animation-fill-mode: both;
+}
+
 
 
 .banner2{
@@ -587,7 +680,7 @@ main {
 
     .banner3Txt{
         padding: 30px;
-        flex-wrap: wrap;
+        word-wrap: normal;
     }
 }
 
