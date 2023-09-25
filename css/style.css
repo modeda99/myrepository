@@ -4,6 +4,8 @@
     font-family: Korb;
 }
 
+/* Wahrscheinlich falsches Font-Paket, richtiges kostet 30€? */
+
 @font-face {
     font-family: Korb;
     src: url(/resources2/fontkorb/font/Korb2.woff2);
@@ -15,9 +17,10 @@ main {
     display: flex;
     flex-direction: column;
 }
+/* Display Flex kann in main höchstwahrscheinlich weggelassen werden */
+
 
 header {
-
     background-color: white;
     height: 50px;
     width: 100%;
@@ -27,6 +30,7 @@ header {
     flex-direction: row;
     justify-content: center;
 }
+/* Z-Index hochsetzen */
 
 nav {
     width: calc(100% - 40px);
@@ -57,15 +61,7 @@ nav {
     margin: auto auto;
     margin-right: auto;
 }
-
-.testFix {
-    width: 100%;
-    background-color: white;
-    position: fixed;
-    z-index: 0;
-    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, .3));
-    margin-bottom: 5px;
-}
+/* Muss in einen Link umgewandelt werden */
 
 .banner {
     height: 320px;
@@ -78,6 +74,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+/* Banner ragt aus irgendeinem Grund in den Header hinein? */
 
 .banner-Txt {
     width: calc(100% - 40px);
@@ -86,6 +83,7 @@ nav {
 }
 
 
+/* Animation linke Seite Synagogen-Banner */
 .slide-in-bottom {
     animation: slide-in-bottom 1.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
@@ -132,6 +130,7 @@ nav {
     width: 100%;
     border-radius: 3%;
 }
+/* Animationen für das neue 1x3 Grid oben */
 
 .scale-in-center {
     animation: scale-in-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
@@ -185,6 +184,8 @@ nav {
     }
 }
 
+/* Media Query für das 1x3 Grid oben und die Tagline */
+
 @media only screen and (max-width: 950px) {
 
     .firstGrid {
@@ -197,6 +198,7 @@ nav {
         margin-top: 80px;
     }
 }
+/* Start Hauptgrid (Kurznachrichten, Neuigkeiten, WeeklyTalk) */
 
 .newsGrid {
     max-width: 1100px;
@@ -318,6 +320,8 @@ nav {
     margin-top: 5px;
 }
 
+/* Media Query für Responsiveness Hauptgrid, h3 in Grid und Neuanordnung innerhalb des Grids */
+
 @media only screen and (max-width: 950px) {
     .newsGrid {
         grid-template-columns: 1fr;
@@ -348,6 +352,8 @@ nav {
     }
 }
 
+/* Keyframes für Tagline Animation */
+
 @keyframes slide-in-bck-left {
     0% {
         transform: translateZ(700px) translateX(-500px);
@@ -360,6 +366,8 @@ nav {
         opacity: 1;
     }
 }
+
+/* Keyframes für Tagline Animation untere Reihe */
 
 @keyframes drop-in {
     0% {
@@ -377,6 +385,8 @@ nav {
     display: flex;
     flex-wrap: wrap;
 }
+
+/* Animationsklassen für die 5 Parts der Tagline-Animation (verschiedene Klassen wegen Anim.delay) */
 
 .slide-in-bck-left {
     animation: slide-in-bck-left 1s ease-in 0.4s;
@@ -450,6 +460,8 @@ nav {
     color: white;
 }
 
+/* Media Query banner2 (unter Hauptgrid) */
+
 @media only screen and (max-width: 650px) {
 
     .banner2 {
@@ -481,6 +493,8 @@ nav {
     font-weight: 500;
     margin: auto auto;
 }
+
+/* Grid mit Kacheln */
 
 .griddestGrid {
     max-width: 1100px;
@@ -539,6 +553,8 @@ nav {
     align-items: end;
     justify-content: center;
 }
+
+/* 5 verschiedene Klassen (cellimage1-5) wegen 5 verschiedenen Hintergrundbildern, kann man bestimmt effizienter machen */
 
 .cellImage1 {
     background: url(/resources2/griddyImgMultiFaktor.jpg) center center no-repeat;
@@ -616,6 +632,8 @@ nav {
     display: grid;
     grid-template-columns: 1fr repeat(6, 3fr);
 }
+
+/* Media Query für das oberste Banner (Synagoge), für das "Verschwinden" der Navigationbar  */
 
 @media only screen and (max-width: 950px) {
     .banner {
