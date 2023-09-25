@@ -56,6 +56,14 @@ main {
     margin-right: auto;
 }
 
+.testFix {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, .3));
+    margin-bottom: 5px;
+}
 
 /* ! */
 
@@ -70,6 +78,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .banner-Txt {
@@ -80,21 +89,22 @@ main {
 
 
 .slide-in-bottom {
-	        animation: slide-in-bottom 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: slide-in-bottom 1.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 
-  @keyframes slide-in-bottom {
+@keyframes slide-in-bottom {
     0% {
-              transform: translateY(1000px);
-      opacity: 0;
+        transform: translateY(1000px);
+        opacity: 0;
     }
+
     100% {
-              transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
+}
+
 
 .leftSideTextSlider1 {
     color: white;
@@ -111,10 +121,9 @@ main {
     color: rgb(144, 164, 174, 1);
     font-size: 2.5em;
     position: relative;
-    
 }
 
-.firstGrid{
+.firstGrid {
     max-width: 1100px;
     width: calc(100%-40%);
     gap: 1.5rem;
@@ -124,97 +133,97 @@ main {
     padding-bottom: 90px;
 }
 
-.floatingLink{
+.floatingLink {
     height: auto;
     width: 100%;
     border-radius: 3%;
 }
 
 .scale-in-center {
-	        animation: scale-in-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
-            animation-fill-mode: both;
+    animation: scale-in-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530);
+    animation-fill-mode: both;
 }
-  @keyframes scale-in-center {
+
+@keyframes scale-in-center {
     0% {
-              transform: scale(0.55);
-      opacity: 0;
+        transform: scale(0.55);
+        opacity: 0;
     }
+
     100% {
-              transform: scale(1);
-      opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }
-  }
-
-
-  .scale-in-center2{
-	        animation: scale-in-center 0.5s ease-in 0.4s ;
-            animation-fill-mode: both;
-
 }
 
 
-  @keyframes scale-in-center2 {
-    0% {
-              transform: scale(0.55);
-      opacity: 0;
-    }
-    100% {
-              transform: scale(1);
-      opacity: 1;
-    }
-  }
+.scale-in-center2 {
+    animation: scale-in-center 0.5s ease-in 0.4s;
+    animation-fill-mode: both;
 
-  .scale-in-center3 {
-	        animation: scale-in-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.8s both;
-            animation-fill-mode: both;
+}
+
+
+@keyframes scale-in-center2 {
+    0% {
+        transform: scale(0.55);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.scale-in-center3 {
+    animation: scale-in-center 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.8s both;
+    animation-fill-mode: both;
 }
 
 @keyframes scale-in-center3 {
     0% {
-              transform: scale(0.55);
-      opacity: 0;
+        transform: scale(0.55);
+        opacity: 0;
     }
+
     100% {
-              transform: scale(1);
-      opacity: 1;
+        transform: scale(1);
+        opacity: 1;
     }
-  }
+}
 
 
-  
 
 
-@media only screen and (max-width: 950px){
 
-    .firstGrid{
+@media only screen and (max-width: 950px) {
+
+    .firstGrid {
         grid-template-columns: 1fr 1fr;
         margin-top: 80px;
         margin-left: 20px;
     }
 
-    .bannerTagline{
+    .bannerTagline {
         margin: auto;
         margin-top: 80px;
         margin-left: 20px;
     }
 }
 
-
-/* ! AUFPASSEN GRID */
-
-
-.newsGrid{
+.newsGrid {
     max-width: 1100px;
     width: calc(100% - 40px);
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: repeat(2, 6fr) ;
+    grid-template-columns: repeat(2, 6fr);
     gap: 1rem;
-    column-gap: 4em;
+    column-gap: 3em;
 }
 
-.h31{
+.h31 {
     color: rgba(0, 156, 180, 1);
     size-adjust: 160px;
     object-fit: cover;
@@ -225,7 +234,7 @@ main {
     display: flex;
 }
 
-.h31:after{
+.h31:after {
     content: "";
     flex-grow: 1;
     height: 1px;
@@ -234,7 +243,7 @@ main {
     margin: auto auto auto 20px;
 }
 
-.gridItem1{
+.gridItem1 {
     color: rgba(0, 156, 180, 1);
     grid-row: span 6;
     grid-column: span 1;
@@ -245,7 +254,7 @@ main {
 }
 
 
-.h32{
+.h32 {
     color: rgba(0, 156, 180, 1);
     object-fit: cover;
     border-radius: 5%;
@@ -255,7 +264,7 @@ main {
     display: flex;
 }
 
-.h32:after{
+.h32:after {
     content: "";
     flex-grow: 1;
     height: 1px;
@@ -264,19 +273,19 @@ main {
     margin: auto auto auto 20px;
 }
 
-.gridItem2{
+.gridItem2 {
     color: rgba(0, 156, 180, 1);
 
     grid-column: 2/3;
     grid-row: 2/4;
-    
+
     display: grid;
     grid-template-columns: 1fr 6fr;
     gap: 1rem;
-    
+
 }
 
-.h33{
+.h33 {
     color: rgba(0, 156, 180, 1);
     object-fit: cover;
     border-radius: 5%;
@@ -287,7 +296,7 @@ main {
     align-items: center;
 }
 
-.h33:after{
+.h33:after {
     content: "";
     flex-grow: 1;
     height: 1px;
@@ -298,7 +307,7 @@ main {
 }
 
 
-.gridItem3{
+.gridItem3 {
     color: rgba(0, 156, 180, 1);
 
     grid-column: 2/3;
@@ -309,143 +318,137 @@ main {
     gap: 1rem;
 }
 
-.gridItem1>img,.gridItem2>img,.gridItem3>img{
+.gridItem1>img,
+.gridItem2>img,
+.gridItem3>img {
     height: auto;
-    max-width: 100%; 
+    max-width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
 
 
-.subTickerUpdates{
+.subTickerUpdates {
     color: grey;
     font-size: small;
     margin-top: 5px;
 }
 
 @media only screen and (max-width: 950px) {
-    .newsGrid{
-        display: grid;
-        grid-template-columns: repeat(1, 6fr);
+    .newsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .h32 {
+
+        grid-column: span 1;
+        grid-row: span 1;
+
+    }
+
+    .h33 {
+
+        grid-column: span 1;
+        grid-row: span 1;
+
+    }
+
+    .gridItem2 {
+        grid-column: 1;
+        grid-row: span 2;
+    }
+
+    .gridItem3 {
+        grid-column: 1;
+        grid-row: span 2;
     }
 }
 
-
-@keyframes slide-in-bck-left{
-    0%{
+@keyframes slide-in-bck-left {
+    0% {
         transform: translateZ(700px) translateX(-500px);
         opacity: 0;
     }
 
 
-    100%{
+    100% {
         transform: translateZ(0) translateX(0);
         opacity: 1;
     }
 }
 
-.slide-in-bck-left{
+@keyframes drop-in{
+    0% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.bannerTagline>h3>div {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.slide-in-bck-left {
     animation: slide-in-bck-left 1s ease-in 0.4s;
     animation-fill-mode: both;
+    display: block;
 }
 
-@keyframes slide-in-bck-left2{
-    0%{
-        transform: translateZ(700px) translateX(-500px);
-        opacity: 0;
-    }
-
-
-    100%{
-        transform: translateZ(0) translateX(0);
-        opacity: 1;
-    }
-}
-
-.slide-in-bck-left2{
-    animation: slide-in-bck-left 1s ease-in 0.8s;
+.slide-in-bck-left2 {
+    animation: drop-in 0.5s ease-in 0.8s;
     animation-fill-mode: both;
+    display: block;
+    margin: 0;
 }
 
-@keyframes slide-in-bck-left3{
-    0%{
-        transform: translateZ(700px) translateX(-500px);
-        opacity: 0;
-    }
-
-
-    100%{
-        transform: translateZ(0) translateX(0);
-        opacity: 1;
-    }
-}
-
-.slide-in-bck-left3{
-    animation: slide-in-bck-left 1s ease-in 1.2s;
+.slide-in-bck-left3 {
+    animation: drop-in 0.5s ease-in 1.2s;
     animation-fill-mode: both;
+    display: block;
 }
 
-@keyframes slide-in-bck-left4{
-    0%{
-        transform: translateZ(700px) translateX(-500px);
-        opacity: 0;
-    }
-
-
-    100%{
-        transform: translateZ(0) translateX(0);
-        opacity: 1;
-    }
-}
-
-.slide-in-bck-left4{
-    animation: slide-in-bck-left 1s ease-in 1.6s;
+.slide-in-bck-left4 {
+    animation: drop-in 0.5s ease-in 1.6s;
     animation-fill-mode: both;
+    display: block;
 }
 
-@keyframes slide-in-bck-left5{
-    0%{
-        transform: translateZ(700px) translateX(-500px);
-        opacity: 0;
-    }
-
-
-    100%{
-        transform: translateZ(0) translateX(0);
-        opacity: 1;
-    }
-}
-
-.slide-in-bck-left5{
-    animation: slide-in-bck-left 1s ease-in 1.8s;
+.slide-in-bck-left5 {
+    animation: drop-in 0.5s ease-in 2s;
     animation-fill-mode: both;
+    display: block;
 }
 
-
-
-.banner2{
+.banner2 {
     max-width: 1140px;
     width: calc(100% - 40px);
     margin: 100px auto 110px auto;
-  
+
     background-color: rgb(82, 158, 173);
 
     color: white;
-    
+
     display: grid;
     grid-template-columns: 5fr 3fr;
     border-radius: 10px;
 
 }
 
-.banner2>img{
+.banner2>img {
     width: 80%;
     height: auto;
     border-radius: 5%;
     margin: 20px auto;
 }
 
-.leftSideTextBanner2{
+.leftSideTextBanner2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -453,35 +456,36 @@ main {
     margin: auto;
 }
 
-.leftSideTextBanner2>p{
+.leftSideTextBanner2>p {
     margin-top: 10px;
     margin-bottom: 16px;
-    
+
     font-weight: lighter;
 }
 
-.leftSideTextBanner2>p>a{
+.leftSideTextBanner2>p>a {
     text-decoration: underline dotted;
     text-underline-offset: 8px;
     color: white;
 }
 
-@media only screen and (max-width: 650px){
+@media only screen and (max-width: 650px) {
 
-        .banner2{
-            display: flex;
-            flex-direction: column;
-        }
-        .banner2>img{
-            margin-top: 20px;
-        }
-
+    .banner2 {
+        display: flex;
+        flex-direction: column;
     }
 
+    .banner2>img {
+        margin-top: 20px;
+    }
+
+}
 
 
 
-.banner3{
+
+.banner3 {
     height: 320px;
     width: 100%;
     background: url(../resources2/arbeitsplatz-gr-desktop.jpg) center center no-repeat fixed;
@@ -491,21 +495,21 @@ main {
     color: white;
     display: flex;
     margin-bottom: 100px;
-   
+
 }
 
-.banner3>p{
+.banner3>p {
     width: 1100px;
     font-size: 25px;
     font-weight: 500;
     margin: auto auto;
 }
 
-.griddestGrid{
+.griddestGrid {
     max-width: 1100px;
     width: calc(100% - 40px);
     margin: 0 auto;
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 15px;
@@ -513,7 +517,7 @@ main {
 }
 
 
-.flyer1{
+.flyer1 {
     grid-row: 1/3;
     grid-column: 1/3;
     background-color: rgb(82, 158, 173);
@@ -528,7 +532,7 @@ main {
     border-radius: 2%;
 }
 
-.flyerBanner{
+.flyerBanner {
     grid-column: span 2;
     background-color: rgb(144, 164, 174);
     color: white;
@@ -539,7 +543,7 @@ main {
     border-radius: 3%;
 }
 
-.griddestGrid>a{
+.griddestGrid>a {
     background-color: rgb(144, 164, 174);
     color: white;
     text-decoration: none;
@@ -551,17 +555,17 @@ main {
     border-radius: 3%;
 }
 
-.griddestGrid>*{
+.griddestGrid>* {
     min-height: 145px;
 }
 
-.bottomGray{
+.bottomGray {
     display: flex;
     align-items: end;
     justify-content: center;
 }
 
-.cellImage1{
+.cellImage1 {
     background: url(/resources2/griddyImgMultiFaktor.jpg) center center no-repeat;
     background-size: cover;
     display: flex;
@@ -569,68 +573,74 @@ main {
     border-radius: 3%;
 }
 
-.cellImage1>a{
+.cellImage1>a {
     justify-content: center;
     text-decoration: none;
     color: white;
 }
 
-.bubbleText{
+.bubbleText {
     background-color: rgb(144, 164, 174);
     text-align: center;
 }
 
-.cellImage2{
+.cellImage2 {
     background: url(/resources2/griddyWeeklyTalk.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 3%;
 }
 
-.cellImage2>a{
+.cellImage2>a {
     justify-content: center;
     text-decoration: none;
     color: white;
 }
 
-.cellImage3{
+.cellImage3 {
     background: url(/resources2/griddyChatGPT.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 3%;
 }
 
-.cellImage3>a{
+.cellImage3>a {
     justify-content: center;
     text-decoration: none;
     color: white;
 }
 
-.cellImage4{
+.cellImage4 {
     background: url(/resources2/gucciGangReloaded.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 3%;
 }
 
-.cellImage4>a{
+.cellImage4>a {
     justify-content: center;
     text-decoration: none;
     color: white;
 }
 
-.cellImage1>a>p, .cellImage2>a>p, .cellImage3>a>p, .cellImage4>a>p{
-    
+.cellImage1>a>p,
+.cellImage2>a>p,
+.cellImage3>a>p,
+.cellImage4>a>p {
+
     align-items: end;
     justify-content: center;
     overflow: hidden;
 }
 
-.cellImage1, .cellImage2, .cellImage3, .cellImage4 {    
+.cellImage1,
+.cellImage2,
+.cellImage3,
+.cellImage4 {
     overflow: hidden;
 }
 
 
-.banner4{
+.banner4 {
     display: grid;
-    grid-template-columns: 1fr repeat(6,3fr);
+    grid-template-columns: 1fr repeat(6, 3fr);
 }
 
 @media only screen and (max-width: 950px) {
@@ -638,11 +648,11 @@ main {
         background: url(/resources2/synagoge2.jpg) no-repeat center;
         background-size: cover;
     }
-    
+
     .navigation {
         display: none;
     }
-    
+
     .leftSideTextSlider1 {
         margin-left: 10px;
     }
@@ -656,21 +666,21 @@ main {
     .griddestGrid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    
+
     .malsomalso {
         grid-column: span 2;
     }
 }
 
-@media screen and (max-width: 750px ) {
-    .griddestGrid{
+@media screen and (max-width: 750px) {
+    .griddestGrid {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 1100px) {
 
-    .griddestGrid{
+    .griddestGrid {
         margin-left: 20px;
     }
 
@@ -678,13 +688,13 @@ main {
         grid-column: span 2;
     }
 
-    .banner3Txt{
+    .banner3Txt {
         padding: 30px;
         word-wrap: normal;
     }
 }
 
-.banner4{
+.banner4 {
     margin-top: 100px;
     background-color: rgb(50, 170, 188);
     background: linear-gradient(to bottom right, rgb(82, 158, 173), white 300%);
@@ -693,7 +703,7 @@ main {
     justify-content: center;
 }
 
-.banner4Orientation{
+.banner4Orientation {
     width: calc(100% - 40px);
     max-width: 1000px;
     display: flex;
@@ -702,7 +712,7 @@ main {
     align-items: center;
 }
 
-.banner4content{
+.banner4content {
     color: white;
     font-size: 1.5rem;
 }
@@ -711,20 +721,20 @@ main {
     text-decoration: none;
 }
 
-.banner4Orientation>img{
+.banner4Orientation>img {
     align-content: end;
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 950px) {
 
-    .jochenjochenjochen{
+    .jochenjochenjochen {
         display: none;
     }
 }
 
 
 
-.fiveGrid{
+.fiveGrid {
     margin: 100px auto 0 auto;
     max-width: 1100px;
     width: calc(100% - 40px);
@@ -733,40 +743,40 @@ main {
     gap: 10px;
 }
 
-.newsBubble{
+.newsBubble {
     background-color: rgb(144, 164, 174);
     border-radius: 5%;
     overflow: hidden;
     height: auto;
 }
 
-.newsBubble>a{
+.newsBubble>a {
     text-decoration: none;
     color: white;
     text-align: left;
 }
 
-.newsBubble>a>p{
+.newsBubble>a>p {
     margin: 5px;
 }
 
-.newsBubble>a>img{
+.newsBubble>a>img {
     aspect-ratio: 16/9;
     width: 100%;
     object-fit: cover;
 }
 
-.newsBubble>a>img:hover{
-    animation: 
+.newsBubble>a>img:hover {
+    animation:
 }
 
 
-.window{
+.window {
     height: 260px;
     width: 100%;
 }
 
-.windowGap{
+.windowGap {
     margin-top: 100px;
     background: url(/resources2/arbeitsplatz-desktop.jpg) center center no-repeat fixed;
     width: 100%;
@@ -774,7 +784,7 @@ main {
 }
 
 
-.footer{
+.footer {
     width: 100%;
     margin-top: 100px;
     background-color: rgb(82, 158, 173);
@@ -782,23 +792,25 @@ main {
     justify-content: center;
 }
 
-.footerContainer{
+.footerContainer {
     max-width: 1140px;
     width: calc(100% - 40px);
     margin: 20px 20px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    
+
 }
 
-.botCell, .botCell>p>a, .botCell>a{
+.botCell,
+.botCell>p>a,
+.botCell>a {
     color: white;
     text-decoration-style: dotted;
     text-decoration-thickness: 1px;
 }
 
-.bottomBanner{
-    
+.bottomBanner {
+
     background-color: rgb(82, 158, 173);
     color: white;
     padding-top: 10px;
@@ -806,8 +818,7 @@ main {
     font-size: 14px;
 }
 
-.title{
+.title {
     font-size: 18px;
     font-weight: 600;
 }
-
