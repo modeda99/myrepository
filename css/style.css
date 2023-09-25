@@ -349,8 +349,7 @@ main {
     width: 80%;
     height: auto;
     border-radius: 5%;
-    margin: auto;
-    margin-bottom: 15px;
+    margin: 20px auto;
 }
 
 .leftSideTextBanner2{
@@ -358,7 +357,7 @@ main {
     flex-direction: column;
     justify-content: center;
     font-size: large;
-    margin: auto 10px;
+    margin: auto;
 }
 
 .leftSideTextBanner2>p{
