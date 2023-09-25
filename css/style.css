@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: Korb;
-
 }
 
 @font-face {
@@ -17,10 +16,6 @@ main {
     flex-direction: column;
 }
 
-.inologo{
-
-}
-
 header {
 
     background-color: white;
@@ -33,7 +28,7 @@ header {
     justify-content: center;
 }
 
-nav{
+nav {
     width: calc(100% - 40px);
     max-width: 1100px;
     display: flex;
@@ -48,8 +43,6 @@ nav{
     align-items: center;
     list-style: none;
     gap: 40px;
-    
-
 }
 
 .navigation>li>a {
@@ -57,7 +50,6 @@ nav{
     font-weight: 550;
     font-size: larger;
     text-decoration: none;
-
 }
 
 .languageIcon {
@@ -74,8 +66,6 @@ nav{
     filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, .3));
     margin-bottom: 5px;
 }
-
-/* ! */
 
 .banner {
     height: 320px;
@@ -117,8 +107,6 @@ nav{
     max-width: 400px;
     font-weight: 300;
 }
-
-
 
 .bannerTagline {
     max-width: 1100px;
@@ -162,13 +150,11 @@ nav{
     }
 }
 
-
 .scale-in-center2 {
     animation: scale-in-center 0.5s ease-in 0.4s;
     animation-fill-mode: both;
 
 }
-
 
 @keyframes scale-in-center2 {
     0% {
@@ -198,10 +184,6 @@ nav{
         opacity: 1;
     }
 }
-
-
-
-
 
 @media only screen and (max-width: 950px) {
 
@@ -310,7 +292,6 @@ nav{
     margin-right: 0;
 }
 
-
 .gridItem3 {
     color: rgba(0, 156, 180, 1);
 
@@ -330,7 +311,6 @@ nav{
     object-fit: cover;
     border-radius: 5px;
 }
-
 
 .subTickerUpdates {
     color: grey;
@@ -381,7 +361,7 @@ nav{
     }
 }
 
-@keyframes drop-in{
+@keyframes drop-in {
     0% {
         transform: scale(1.5);
         opacity: 0;
@@ -435,15 +415,11 @@ nav{
     max-width: 1140px;
     width: calc(100% - 40px);
     margin: 100px auto 110px auto;
-
     background-color: rgb(82, 158, 173);
-
     color: white;
-
     display: grid;
     grid-template-columns: 5fr 3fr;
     border-radius: 10px;
-
 }
 
 .banner2>img {
@@ -487,9 +463,6 @@ nav{
 
 }
 
-
-
-
 .banner3 {
     min-height: 320px;
     width: 100%;
@@ -500,9 +473,7 @@ nav{
     color: white;
     display: flex;
     margin-bottom: 100px;
-
 }
-
 
 .banner3>p {
     width: 1100px;
@@ -519,9 +490,7 @@ nav{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 15px;
-
 }
-
 
 .flyer1 {
     grid-row: 1/3;
@@ -643,7 +612,6 @@ nav{
     overflow: hidden;
 }
 
-
 .banner4 {
     display: grid;
     grid-template-columns: 1fr repeat(6, 3fr);
@@ -738,8 +706,6 @@ nav{
     }
 }
 
-
-
 .fiveGrid {
     margin: 100px auto 0 auto;
     max-width: 1100px;
@@ -788,7 +754,6 @@ nav{
     width: 100%;
     height: 260px;
 }
-
 
 .footer {
     width: 100%;
