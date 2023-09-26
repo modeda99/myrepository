@@ -17,6 +17,7 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 /* Display Flex kann in main höchstwahrscheinlich weggelassen werden */
 
 
@@ -31,6 +32,7 @@ header {
     justify-content: center;
     filter: drop-shadow(10px 1px 5px grey);
 }
+
 /* Z-Index hochsetzen */
 
 nav {
@@ -42,6 +44,43 @@ nav {
 
 }
 
+/* Baustelle Dropdown Menü (responsive) */
+
+/* .dropdownButton{
+    color: blue;
+    border: none;
+    background-color: rgb(82, 158, 173);
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    display: none;
+}
+
+.navigationBar{
+    display: block;
+    text-align: center;
+    display: none;
+}
+
+.navigationBar>ul{
+    display: inline-flex;
+    flex-direction: column;
+    list-style: none;
+    color:white;
+    background-color: rgb(82, 158, 173);
+
+}
+
+.navigationBar>ul>li{
+    padding: 10px;
+    font-weight: 700;
+    margin: 2px;
+} */
+
 .navigation {
     display: flex;
     justify-content: right;
@@ -52,7 +91,7 @@ nav {
 
 /* INOSOFT logo topleft cursor pointer */
 
-.inologo:hover{
+.inologo:hover {
     cursor: pointer;
 }
 
@@ -65,7 +104,7 @@ nav {
 
 /* Hover-Effekt navigationbar */
 
-.navigation>li>a:hover{
+.navigation>li>a:hover {
     color: grey;
 }
 
@@ -74,6 +113,7 @@ nav {
     margin: auto auto;
     margin-right: auto;
 }
+
 /* Muss in einen Link umgewandelt werden */
 
 .banner {
@@ -87,6 +127,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 /* Banner ragt aus irgendeinem Grund in den Header hinein? */
 
 .banner-Txt {
@@ -143,6 +184,7 @@ nav {
     width: 100%;
     border-radius: 3%;
 }
+
 /* Animationen für das neue 1x3 Grid oben */
 
 .scale-in-center {
@@ -211,6 +253,7 @@ nav {
         margin-top: 80px;
     }
 }
+
 /* Start Hauptgrid (Kurznachrichten, Neuigkeiten, WeeklyTalk) */
 
 .newsGrid {
@@ -335,21 +378,24 @@ nav {
 
 /* Hover Effekt für newsGrid Items (geht schöner?) */
 
-.h31>h3, .h32>h3, .h33>h3:hover{
+.h31>h3,
+.h32>h3,
+.h33>h3:hover {
     cursor: pointer;
 }
 
 /* Hover Effekt für cursor:pointer*/
 
-.cursorClass:hover, .newsGrid>img{
+.cursorClass:hover,
+.newsGrid>img {
     cursor: pointer;
 }
 
-.grow{
+.grow {
     transition: all .2s ease-in-out;
 }
 
-.grow:hover{
+.grow:hover {
     transform: scale(1.03);
 }
 
@@ -681,6 +727,22 @@ nav {
     .navigation {
         display: none;
     }
+
+    /* Baustelle für Dropdown Menü (responsive) */
+    /* .navigationBar{
+        display: none;
+    }
+    
+    .dropdownButton{
+        display: block;
+    }
+
+    .dropdownButton:hover{
+        .navigationBar{
+            display: block;
+        }
+    } */
+
 
     .leftSideTextSlider1 {
         margin-left: 10px;
