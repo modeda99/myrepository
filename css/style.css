@@ -29,6 +29,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    filter: drop-shadow(10px 1px 5px grey);
 }
 /* Z-Index hochsetzen */
 
