@@ -463,6 +463,7 @@ nav {
     display: grid;
     grid-template-columns: 5fr 3fr;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .banner2>img {
@@ -500,6 +501,7 @@ nav {
     .banner2 {
         display: flex;
         flex-direction: column;
+
     }
 
     .banner2>img {
@@ -518,6 +520,7 @@ nav {
     color: white;
     display: flex;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .banner3>p {
