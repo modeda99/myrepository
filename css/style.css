@@ -49,11 +49,23 @@ nav {
     gap: 40px;
 }
 
+/* INOSOFT logo topleft cursor pointer */
+
+.inologo:hover{
+    cursor: pointer;
+}
+
 .navigation>li>a {
     color: rgba(0, 156, 180, 1);
     font-weight: 550;
     font-size: larger;
     text-decoration: none;
+}
+
+/* Hover-Effekt navigationbar */
+
+.navigation>li>a:hover{
+    color: grey;
 }
 
 .languageIcon {
@@ -318,6 +330,26 @@ nav {
     color: grey;
     font-size: small;
     margin-top: 5px;
+}
+
+/* Hover Effekt für newsGrid Items (geht schöner?) */
+
+.h31>h3, .h32>h3, .h33>h3:hover{
+    cursor: pointer;
+}
+
+/* Hover Effekt für cursor:pointer*/
+
+.cursorClass:hover, .newsGrid>img{
+    cursor: pointer;
+}
+
+.grow{
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover{
+    transform: scale(1.03);
 }
 
 /* Media Query für Responsiveness Hauptgrid, h3 in Grid und Neuanordnung innerhalb des Grids */
